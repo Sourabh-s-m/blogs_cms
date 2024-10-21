@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Blogs') }}</title>
     {{-- css files --}}
     <link rel="stylesheet" href="{{ asset('assets/css/datatable.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.dataTables.min.css') }}">
@@ -16,6 +16,7 @@
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/summernote.css') }}"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.min.css">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <title>Blog Management</title>
 </head>
 
 <body>
