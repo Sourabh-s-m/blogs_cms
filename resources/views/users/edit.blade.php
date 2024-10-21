@@ -7,8 +7,7 @@
         <div class="mt-3">
             <form action="{{ route('users.update', $user->id) }}" method="POST" data-parsley-validate>
                 @csrf
-                @method('PUT') <!-- This is important for the update request -->
-
+                @method('PUT')
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="name" class="form-label">Name</label>
@@ -16,14 +15,12 @@
                             data-parsley-required-message="Name is required." data-parsley-maxlength="255"
                             placeholder="Enter name" value="{{ old('name', $user->name) }}">
                     </div>
-
                     <div class="col-md-6 mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" name="email" class="form-control" id="email" required
                             data-parsley-required-message="Email is required." data-parsley-type="email"
                             placeholder="Enter email" value="{{ old('email', $user->email) }}">
                     </div>
-
                     <div class="col-md-6 mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" name="password" class="form-control" id="password"
@@ -31,7 +28,6 @@
                         <small class="form-text text-muted">Leave blank if you do not want to change the password.</small>
                     </div>
                 </div>
-
                 <div class="text-end">
                     <button type="submit" class="btn btn-primary">Update</button>
                 </div>

@@ -6,7 +6,6 @@
         <div class="text-md-end text-start">
             <a href="{{ route('users.create') }}" class="btn btn-primary mt-2 mb-2 mt-3 mb-3">Add</a>
         </div>
-
         <table id="users" class="table" style="width:100%">
             <thead class="table-dark">
                 <tr>

@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h4 class="pt-4 border-bottom pb-4">Blog Post Details</h4>
-            <a href="{{ route('blogs.index') }}" class="btn btn-dark mt-2 mb-2 mt-3 mb-3">Back</a>
+        <a href="{{ route('blogs.index') }}" class="btn btn-dark mt-2 mb-2 mt-3 mb-3">Back</a>
 
         <div class="card mb-4">
             <div class="card-header">
@@ -18,9 +18,6 @@
                 @else
                     <p>No image available for this blog post.</p>
                 @endif
-                {{-- <p class="card-text mb-4">{!! nl2br(
-                    str_replace(['<p>', '</p>', '<br>', '&nbsp;'], ['', "\n\n", "\n", ' '], strip_tags($blog->description, '<p><br>')),
-                ) !!}</p> --}}
                 <p class="card-text">{!! $blog->description !!}</p>
 
             </div>
