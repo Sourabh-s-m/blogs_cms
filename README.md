@@ -17,6 +17,14 @@ php artisan migrate
 php artisan db:seed
 php artisan storage:link
 
+<!-- admin login details -->
+email : admin@admin.com
+password : admin@1234
+
+<!-- user login details -->
+email : user@user.com
+password : user@1234
+
 3. Start the local server (If you are using windows make sure xaamp server is running):
 php artisan serve
 npm run dev
